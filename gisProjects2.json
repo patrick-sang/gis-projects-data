@@ -1,0 +1,82 @@
+{
+	"projects": [
+		{
+			"thumbnail": "https://images.unsplash.com/photo-1524661135-423995f22d0f?w=400",
+			"type": "GeoAI / Suitability",
+			"title": "Data-Driven Market Expansion — Spatial Suitability Model",
+			"date": "2024",
+			"accuracy": "89% accuracy",
+			"description": "Identify and score high-potential expansion locations for PAYGO energy business using spatial ML, demographic and socioeconomic indicators.",
+			"technologiesList": {
+				"technologies": [
+					"PostGIS",
+					"Python",
+					"XGBoost",
+					"WorldPop"
+				]
+			},
+			"githubUrl": "#",
+			"demoUrl": "#"
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		},
+		{
+			"technologiesList": {
+				"technologies": [
+					null,
+					null,
+					null,
+					null
+				]
+			}
+		}
+	]
+}
