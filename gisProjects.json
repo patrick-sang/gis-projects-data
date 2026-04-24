@@ -4,25 +4,25 @@
 			"thumbnail": [
 				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@d924f42a0a450ec7c5129de366d34a07ed9d7469/images/budgetviz.png",
 				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@9a53dd0777ca0c55f7ea3bc61686d7c5560a413e/images/disable.png",
-				null,
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@0538f90e916390e6d654caa91c2585ae15ea2c97/images/disable.png",
 				null
 			],
 			"type": [
 				"dashboards",
 				"Dashboards",
-				null,
+				"Dashboards",
 				null
 			],
 			"title": [
 				"Kenya County Budget Implementation Financial Year:2023/2024-Dashboard",
-				"Kenya County DisabilityVisualization",
-				null,
+				"Kenya County Disability Visualization",
+				"Kenya County Disability Vizualization",
 				null
 			],
 			"date": [
 				"2025",
-				null,
-				null,
+				"2024",
+				"2024",
 				null
 			],
 			"description": [
@@ -57,7 +57,7 @@
 			],
 			"demoUrl": [
 				"https://patrick-sang.github.io/Nakuru/budget2024.html",
-				null
+				"https://patrick-sang.github.io/"
 			]
 		},
 		{
