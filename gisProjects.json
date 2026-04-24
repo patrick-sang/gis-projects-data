@@ -74,13 +74,13 @@
 				null
 			],
 			"title": [
-				null,
+				"Diaspora Remitance to Kenya Multi-Year Analysis",
 				null,
 				null,
 				null
 			],
 			"date": [
-				null,
+				"2025",
 				null,
 				null,
 				null
@@ -92,10 +92,10 @@
 				null
 			],
 			"technologies": [
-				null,
-				null,
-				null,
-				null,
+				"QGIS",
+				"svelte",
+				"python",
+				"leaflet.js",
 				null,
 				null,
 				null,
@@ -110,13 +110,13 @@
 				null
 			],
 			"githubUrl": [
-				null,
+				"https://github.com/patrick-sang",
 				null,
 				null,
 				null
 			],
 			"demoUrl": [
-				null,
+				"https://patrick-sang.github.io/Diaspora_Remmitance.html",
 				null
 			]
 		}
