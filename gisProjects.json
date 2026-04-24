@@ -36,10 +36,6 @@
 				"turf.js",
 				"chart.js",
 				"javascript",
-				null,
-				null,
-				null,
-				null,
 				"leaflet.js",
 				"Geojson",
 				"QGIS",
@@ -47,12 +43,16 @@
 				null,
 				null,
 				null,
+				null,
+				null,
+				null,
+				null,
 				null
 			],
 			"githubUrl": [
 				"https://github.com/patrick-sang",
-				null,
 				"https://patrick-sang.github.o",
+				null,
 				null
 			],
 			"demoUrl": [
