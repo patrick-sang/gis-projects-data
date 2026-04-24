@@ -1,12 +1,42 @@
 {
 	"projects": [
 		{
-			"thumbnail": "https://images.unsplash.com/photo-1524661135-423995f22d0f?w=400",
-			"type": "GeoAI / Suitability",
-			"title": "Data-Driven Market Expansion — Spatial Suitability Model",
-			"date": "2024",
+			"thumbnail": [
+				"https://images.unsplash.com/photo-1524661135-423995f22d0f?w=400",
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				"GeoAI / Suitability",
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				"Data-Driven Market Expansion — Spatial Suitability Model",
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				"2024",
+				null,
+				null,
+				null,
+				null
+			],
 			"accuracy": "89% accuracy",
-			"description": "Identify and score high-potential expansion locations for PAYGO energy business using spatial ML, demographic and socioeconomic indicators.",
+			"description": [
+				"Identify and score high-potential expansion locations for PAYGO energy business using spatial ML, demographic and socioeconomic indicators.",
+				null,
+				null,
+				null,
+				null
+			],
 			"technologiesList": {
 				"technologies": [
 					"PostGIS",
@@ -15,8 +45,39 @@
 					"WorldPop"
 				]
 			},
-			"githubUrl": "#",
-			"demoUrl": "#"
+			"githubUrl": [
+				"#",
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				"#",
+				null
+			],
+			"technologies": [
+				"PostGIS",
+				"Python",
+				"XGBoost",
+				"WorldPop",
+				"PostgreSQL",
+				"PostGIS",
+				"H3",
+				"PySAL",
+				"FastAPI",
+				"DuckDB",
+				"MapLibre",
+				"H3",
+				"Jsprit",
+				"GraphHopper",
+				"Node.js",
+				"PostGIS",
+				"Sentinel-2",
+				"UAV/Drones",
+				"Python",
+				"Rasterio"
+			]
 		},
 		{
 			"technologiesList": {
@@ -26,7 +87,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		},
 		{
 			"technologiesList": {
@@ -36,7 +165,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		},
 		{
 			"technologiesList": {
@@ -46,7 +243,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		},
 		{
 			"technologiesList": {
@@ -56,7 +321,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		},
 		{
 			"technologiesList": {
@@ -66,7 +399,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		},
 		{
 			"technologiesList": {
@@ -76,7 +477,75 @@
 					null,
 					null
 				]
-			}
+			},
+			"thumbnail": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"type": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"title": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"description": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"technologies": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				null,
+				null
+			]
 		}
 	]
 }
