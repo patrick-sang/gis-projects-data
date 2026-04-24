@@ -52,7 +52,7 @@
 			"githubUrl": [
 				"https://github.com/patrick-sang",
 				null,
-				null,
+				"https://patrick-sang.github.o",
 				null
 			],
 			"demoUrl": [
@@ -62,13 +62,13 @@
 		},
 		{
 			"thumbnail": [
-				null,
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@13742f9985f62ea8134bd13c292d2651fd792079/images/flow.png",
 				null,
 				null,
 				null
 			],
 			"type": [
-				null,
+				"Dashboards",
 				null,
 				null,
 				null
