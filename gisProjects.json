@@ -3,13 +3,13 @@
 		{
 			"thumbnail": [
 				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@d924f42a0a450ec7c5129de366d34a07ed9d7469/images/budgetviz.png",
-				null,
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@9a53dd0777ca0c55f7ea3bc61686d7c5560a413e/images/disable.png",
 				null,
 				null
 			],
 			"type": [
 				"dashboards",
-				null,
+				"Dashboards",
 				null,
 				null
 			],
