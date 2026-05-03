@@ -108,15 +108,9 @@
 	],
 	"projectsGrid": [
 		{
-			"thumbnail": "https://images.unsplash.com/photo-1524661135-423995f22d0f?w=400",
-			"type": "GeoAI",
-			"title": "Advanced Spatial Intelligence",
-			"date": "2025",
 			"tech-tags": [
 				{}
-			],
-			"githubUrl": "#",
-			"demoUrl": "#"
+			]
 		}
 	]
 }
