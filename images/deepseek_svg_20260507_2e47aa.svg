@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1050" width="100%" height="100%" style="background-color: #121317;">
+    <defs>
+        <!-- Background Grid Pattern -->
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#1F2229" stroke-width="1"/>
+        </pattern>
+        
+        <!-- Drop Shadow Filter -->
+        <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+            <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+        </filter>
+
+        <!-- Arrowhead Marker -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#555B6E"/>
+        </marker>
+        
+        <!-- Glow for Active Paths -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="900" height="1050" fill="url(#grid)"/>
+
+    <!-- Title Section -->
+    <g transform="translate(450, 40)">
+        <text x="0" y="0" fill="#FF4D5A" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle" font-weight="bold" letter-spacing="2">PRECISION AGRICULTURE GIS WORKFLOW</text>
+        <text x="0" y="20" fill="#8A90A5" font-family="system-ui, -apple-system, sans-serif" font-size="13" text-anchor="middle">Automated Crop Health Monitoring &amp; Zonal Management using Satellite Data</text>
+    </g>
+
+    <!-- Workflow Connections (Lines) -->
+    <g fill="none" stroke="#555B6E" stroke-width="2" marker-end="url(#arrow)">
+        <!-- N1 to N2 (Webhook to PostGIS) -->
+        <path d="M 450 170 L 450 205 L 250 205 L 250 245"/>
+        <!-- N1 to N3 (Webhook to Sentinel Hub) -->
+        <path d="M 450 170 L 450 205 L 650 205 L 650 245"/>
+        
+        <!-- N2 to N4 (PostGIS to NDVI Calc) -->
+        <path d="M 250 320 C 250 360 450 360 450 395"/>
+        <!-- N3 to N4 (Sentinel to NDVI Calc) -->
+        <path d="M 650 320 C 650 360 450 360 450 395"/>
+        
+        <!-- N4 to N5 (NDVI Calc to Switch) -->
+        <path d="M 450 470 L 450 545"/>
+        
+        <!-- N5 to Branches -->
+        <path d="M 450 620 C 450 670 250 670 250 725"/>
+        <path d="M 450 620 L 450 725"/>
+        <path d="M 450 620 C 450 670 650 670 650 725"/>
+        
+        <!-- Branches to N9 (Response) -->
+        <path d="M 250 800 C 250 850 300 870 450 895"/>
+        <path d="M 450 800 L 450 895"/>
+        <path d="M 650 800 C 650 850 600 870 450 895"/>
+    </g>
+
+    <!-- Connection Labels -->
+    <g font-family="system-ui, -apple-system, sans-serif" font-size="12">
+        <!-- N1 -> N2 -->
+        <g transform="translate(260, 180)">
+            <rect x="-10" y="-12" width="80" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#8A90A5">Field ID</text>
+        </g>
+        <!-- N1 -> N3 -->
+        <g transform="translate(510, 180)">
+            <rect x="-10" y="-12" width="120" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#8A90A5">Satellite Scene</text>
+        </g>
+        <!-- N2 -> N4 -->
+        <g transform="translate(260, 335)">
+            <rect x="-10" y="-12" width="110" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#8A90A5">Field Geometry</text>
+        </g>
+        <!-- N3 -> N4 -->
+        <g transform="translate(480, 345)">
+            <rect x="-10" y="-12" width="120" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#8A90A5">Band 4 &amp; Band 8</text>
+        </g>
+        
+        <!-- N5 Branches -->
+        <!-- Low NDVI -->
+        <g transform="translate(260, 665)">
+            <rect x="-10" y="-12" width="120" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#FF4D5A">NDVI &lt; 0.3 (Stress)</text>
+        </g>
+        <!-- Normal NDVI -->
+        <g transform="translate(460, 695)">
+            <rect x="-10" y="-12" width="130" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#EAAE2E">NDVI 0.3 - 0.6 (Normal)</text>
+        </g>
+        <!-- High NDVI -->
+        <g transform="translate(540, 665)">
+            <rect x="-10" y="-12" width="120" height="20" rx="4" fill="#1A1D24"/>
+            <text x="0" y="0" fill="#6C42C7">NDVI &gt; 0.6 (High)</text>
+        </g>
+    </g>
+
+    <!-- Nodes -->
+    <!-- N1: Trigger Webhook -->
+    <g transform="translate(330, 100)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#FF4D5A" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#FF4D5A"/>
+        <rect x="4" y="0" width="4" height="70" fill="#FF4D5A"/>
+        <!-- Socket -->
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#FF4D5A" stroke-width="2"/>
+        <!-- Icon -->
+        <circle cx="35" cy="35" r="12" fill="none" stroke="#FF4D5A" stroke-width="2"/>
+        <path d="M 30 30 L 40 40 M 40 30 L 30 40" stroke="#FF4D5A" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#FF4D5A" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Trigger</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Webhook: Field ID</text>
+    </g>
+
+    <!-- N2: Action PostGIS -->
+    <g transform="translate(130, 250)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#3A3F54" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#3A3F54"/>
+        <rect x="4" y="0" width="4" height="70" fill="#3A3F54"/>
+        <!-- Socket -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Icon -->
+        <circle cx="35" cy="35" r="12" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <path d="M 25 30 A 10 10 0 0 1 45 30" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <path d="M 28 35 h 14 v -5" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Action</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">HTTP: PostGIS (GeoJSON)</text>
+    </g>
+
+    <!-- N3: Action Sentinel Hub -->
+    <g transform="translate(530, 250)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#3A3F54" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#3A3F54"/>
+        <rect x="4" y="0" width="4" height="70" fill="#3A3F54"/>
+        <!-- Socket -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Icon -->
+        <rect x="23" y="25" width="24" height="20" rx="3" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <path d="M 23 30 h 24 M 23 35 h 24 M 23 40 h 24" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Action</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">HTTP: Sentinel Hub</text>
+    </g>
+
+    <!-- N4: Function NDVI Calc -->
+    <g transform="translate(330, 400)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#6C42C7" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#6C42C7"/>
+        <rect x="4" y="0" width="4" height="70" fill="#6C42C7"/>
+        <!-- Sockets -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#6C42C7" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#6C42C7" stroke-width="2"/>
+        <!-- Icon -->
+        <rect x="23" y="23" width="24" height="24" rx="4" fill="none" stroke="#6C42C7" stroke-width="2"/>
+        <text x="35" y="40" fill="#6C42C7" font-family="monospace" font-size="13" text-anchor="middle">fn</text>
+        <!-- Text -->
+        <text x="65" y="30" fill="#B5A8FF" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Function</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Calculate Avg NDVI</text>
+    </g>
+
+    <!-- N5: Logic Switch -->
+    <g transform="translate(330, 550)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#EAAE2E" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#EAAE2E"/>
+        <rect x="4" y="0" width="4" height="70" fill="#EAAE2E"/>
+        <!-- Sockets -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#EAAE2E" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#EAAE2E" stroke-width="2"/>
+        <!-- Icon -->
+        <polygon points="35,23 47,35 35,47 23,35" fill="none" stroke="#EAAE2E" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#FFE0A3" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Logic</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Switch: NDVI Levels</text>
+    </g>
+
+    <!-- N6: Action PostGIS Store -->
+    <g transform="translate(130, 730)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#3A3F54" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#3A3F54"/>
+        <rect x="4" y="0" width="4" height="70" fill="#3A3F54"/>
+        <!-- Sockets -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Icon -->
+        <ellipse cx="35" cy="30" rx="10" ry="4" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <path d="M 25 30 L 25 40 A 10 4 0 0 0 45 40 L 45 30" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <path d="M 25 35 A 10 4 0 0 0 45 35" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Action</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">PostGIS: Insert Row</text>
+    </g>
+
+    <!-- N7: Action Email Alert -->
+    <g transform="translate(330, 730)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#3A3F54" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#3A3F54"/>
+        <rect x="4" y="0" width="4" height="70" fill="#3A3F54"/>
+        <!-- Sockets -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Icon -->
+        <rect x="23" y="27" width="24" height="16" rx="2" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <polyline points="23,27 35,37 47,27" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Action</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Send Email Alert</text>
+    </g>
+
+    <!-- N8: Action Dashboard -->
+    <g transform="translate(530, 730)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#3A3F54" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#3A3F54"/>
+        <rect x="4" y="0" width="4" height="70" fill="#3A3F54"/>
+        <!-- Sockets -->
+        <circle cx="0" cy="35" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <circle cx="120" cy="70" r="6" fill="#121317" stroke="#3A3F54" stroke-width="2"/>
+        <!-- Icon -->
+        <rect x="23" y="25" width="24" height="18" rx="2" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <line x1="35" y1="43" x2="35" y2="50" stroke="#3A3F54" stroke-width="2"/>
+        <line x1="28" y1="50" x2="42" y2="50" stroke="#3A3F54" stroke-width="2"/>
+        <rect x="27" y="28" width="4" height="8" fill="#3A3F54"/>
+        <rect x="34" y="30" width="4" height="6" fill="#3A3F54"/>
+        <rect x="41" y="32" width="4" height="4" fill="#3A3F54"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Action</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Update Dashboard</text>
+    </g>
+
+    <!-- N9: Response Webhook -->
+    <g transform="translate(330, 900)">
+        <rect width="240" height="70" rx="8" fill="#1A1D24" stroke="#FF4D5A" stroke-width="2" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="8" height="70" rx="8" fill="#FF4D5A"/>
+        <rect x="4" y="0" width="4" height="70" fill="#FF4D5A"/>
+        <!-- Sockets -->
+        <circle cx="120" cy="0" r="6" fill="#121317" stroke="#FF4D5A" stroke-width="2"/>
+        <!-- Icon -->
+        <circle cx="35" cy="35" r="12" fill="none" stroke="#FF4D5A" stroke-width="2"/>
+        <path d="M 30 30 L 40 40 M 40 30 L 30 40" stroke="#FF4D5A" stroke-width="2"/>
+        <!-- Text -->
+        <text x="65" y="30" fill="#FF4D5A" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">Response</text>
+        <text x="65" y="50" fill="#fff" font-family="system-ui, sans-serif" font-size="14">Return Zonal Report</text>
+    </g>
+
+    <!-- Legend / Footer -->
+    <g transform="translate(30, 1010)">
+        <text x="0" y="0" fill="#8A90A5" font-family="system-ui, sans-serif" font-size="12">Legend:</text>
+        
+        <circle cx="60" cy="-6" r="6" fill="#FF4D5A" stroke="none"/>
+        <text x="75" y="0" fill="#fff" font-family="system-ui, sans-serif" font-size="12">Trigger / Response</text>
+        
+        <rect x="180" y="-12" width="12" height="12" rx="2" fill="none" stroke="#3A3F54" stroke-width="2"/>
+        <text x="200" y="0" fill="#fff" font-family="system-ui, sans-serif" font-size="12">External Service / DB</text>
+        
+        <polygon points="320,-5 330,-11 330,1" fill="none" stroke="#EAAE2E" stroke-width="2"/>
+        <text x="340" y="0" fill="#fff" font-family="system-ui, sans-serif" font-size="12">Conditional Logic</text>
+        
+        <rect x="440" y="-12" width="12" height="12" rx="2" fill="none" stroke="#6C42C7" stroke-width="2"/>
+        <text x="460" y="0" fill="#fff" font-family="system-ui, sans-serif" font-size="12">Custom Code</text>
+    </g>
+</svg>
