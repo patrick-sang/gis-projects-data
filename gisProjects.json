@@ -86,7 +86,8 @@
 			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@bbcc41b05f4ec1ab6e6a672e7dce97eae3a82976/images/1000038652.png",
 			"type": "Dashboards",
 			"title": "Kenya Multi-Year Diaspora Remitance Flow ",
-			"date": "2023"
+			"date": "2023",
+			"githubUrl": "https://github.com/patrick-sang"
 		},
 		{}
 	],
