@@ -89,7 +89,8 @@
 			"title": "Kenya Multi-Year Diaspora Remitance Flow",
 			"date": "2023",
 			"githubUrl": "https://github.com/patrick-sang",
-			"demoUrl": "https://patrick-sang.github.io/Diaspora-Remitance.html"
+			"demoUrl": "https://patrick-sang.github.io/Diaspora-Remitance.html",
+			"description": "Project overview:\nThe Project maps remittance flows from six world regions — North America, Europe, Middle East, Africa, Asia-Pacific, and Rest of World — into Kenya using animated curved lines on a Leaflet map. The line thickness, color, and animation speed represent the remittance amount, while tooltips and popups show exact values and distances.\n"
 		},
 		{}
 	],
