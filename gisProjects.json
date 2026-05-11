@@ -90,7 +90,7 @@
 			"date": "2023",
 			"githubUrl": "https://github.com/patrick-sang",
 			"demoUrl": "https://patrick-sang.github.io/Diaspora-Remitance.html",
-			"description": "Project overview:\nThe Project maps remittance flows from six world regions — North America, Europe, Middle East, Africa, Asia-Pacific, and Rest of World — into Kenya using animated curved lines on a Leaflet map. The line thickness, color, and animation speed represent the remittance amount, while tooltips and popups show exact values and distances.\n"
+			"description": "Project overview:\nThe Project maps remittance flows from six world regions — North America, Europe, Middle East, Africa, Asia-Pacific, and Rest of World — into Kenya using animated curved lines on a Leaflet map. The line thickness, color, and animation speed represent the remittance amount, while tooltips and popups show exact values and distances.\n\n\nKey Features:\nYearly data views\t-Switch between 2022–2025 to see remittance changes over time\nRegion filtering-Focus on a single region’s flows\nDynamic map styling-\tLine width scales with remittance value; colors by region\nAnimated flows-\tDashed lines with pulsing/moving effects to indicate direction and scale\nStatistics panel-\tShows total remittance per region and average distance traveled\nTrend analysis-\tLine chart and YoY growth table with market share\nData export\t-Export as GeoJSON, CSV, or plain-text analysis report\nResponsive design-Works on desktop and mobile screen.\n\n"
 		},
 		{}
 	],
