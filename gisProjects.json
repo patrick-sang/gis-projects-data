@@ -70,7 +70,7 @@
 				null
 			],
 			"description": [
-				null,
+				"PRIJECT OVERVIEW:\nThis is an interactive data visualization dashboard that analyzes disability statistics from the 2019 Kenya Population and Housing Census. It transforms raw census data into an accessible, map-based tool that helps users understand disability prevalence across Kenya's 47 counties.\n",
 				null
 			],
 			"technologies": [
