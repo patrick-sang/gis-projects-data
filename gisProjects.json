@@ -73,14 +73,6 @@
 				"PRIJECT OVERVIEW:\nThis is an interactive data visualization dashboard that analyzes disability statistics from the 2019 Kenya Population and Housing Census. It transforms raw census data into an accessible, map-based tool that helps users understand disability prevalence across Kenya's 47 counties.\nThe Problem This Solves:\nBefore this dashboard, disability data was buried in lengthy PDF reports and complex spreadsheets. Policymakers, researchers, and advocates couldn't easily:\nSee which counties have the highest disability rates\nCompare different types of disabilities (mobility vs. vision vs. hearing)\nIdentify regional patterns or clusters\nExport insights for reports or presentations.\nFEATURES:\n1. Interactive County Map\nColor-coded map of Kenya showing disability rates by county-Click any county to see its specific data\n Dynamic updating as you filter or select different disability types\n\n2. Six Disability Domains Analyzed\nDomain-\tWhat It Measures\nMobility-\tDifficulty walking or climbing stairs\nSeeing-\tDifficulty with vision even with glasses\nHearing-\tDifficulty with hearing even with hearing aid\nCognition-\tDifficulty remembering or concentrating\nSelf-Care-\tDifficulty with daily self-care activities\nCommunication-\tDifficulty being understood or understanding others\n3. Analytical Tools\nSpatial Filtering: Select multiple counties to focus analysis on specific regions\nDomain Comparison: Compare two disability types against each other\nClustering Analysis: Groups counties with similar disability patterns\nCorrelation Matrix: Shows relationships between different disability types\n\n4. Export Capabilities\nExport maps as PNG images\nDownload data as CSV files\nGenerate PDF analysis reports\n\n\nWho Would Use This:\nUser\tUse Case\nGovernment policymakers\tResource allocation and planning\nNGOs and disability advocates\tIdentifying underserved regions\nResearchers and academics\tStatistical analysis and trend identification\nHealthcare planners\tService delivery targeting\nJournalists\tData-driven reporting\nTechnical Implementation:\nThe dashboard is built as a single HTML file using:\n\nLeaflet.js for interactive mapping\n\nD3.js for data visualizations and charts\n\nChart.js for additional charting capabilities\n\njsPDF & html2canvas for PDF/PNG export functionality\n\nData is embedded as GeoJSON with county boundaries and census statistics for all 47 Kenyan counties.\n\nVALUE PROPOSITIO\nThis dashboard transforms static census numbers into an actionable tool for understanding disability in Kenya. It makes complex data accessible, comparable, and exportable — saving hours of manual data processing and enabling evidence-based decision making.\n\n\n\n\n\n",
 				null
 			],
-			"technologies": [
-				null,
-				null
-			],
-			"githubUrl": [
-				null,
-				null
-			],
 			"demoUrl": "https://patrick-sang.github.io/disability_dashboard.html"
 		},
 		{
