@@ -93,7 +93,8 @@
 		},
 		{
 			"type": "N8N automations",
-			"title": "Nairobi Flood Intelligence → n8n Flood Automation Platform"
+			"title": "Nairobi Flood Intelligence → n8n Flood Automation Platform",
+			"description": "This is a geospatial flood intelligence platform developed to predict, monitor, and respond to urban flooding across Nairobi County. The system integrates rainfall forecasts, Sentinel-1 radar imagery, digital elevation models, hydrological analysis, and road network intelligence to identify flood-prone locations and generate realtime flood alerts.\n\nThe platform automates geospatial workflows using n8n to continuously process environmental datasets, detect water accumulation zones, estimate flood severity, and optimize emergency routing. AI-assisted spatial models are used to predict flood risks and estimate the impact on roads, settlements, and public infrastructure.\n\nThis project demonstrates advanced hydrological GIS analysis, raster processing automation, disaster intelligence systems, and realtime environmental monitoring.\n\n"
 		},
 		{}
 	],
