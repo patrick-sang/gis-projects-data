@@ -90,6 +90,9 @@
 			"title": "Real Time Flood Warning System(Nairobi County)-Beta version(in the process of Intergrationing with Google Earth Engine APIs",
 			"description": "Beta version",
 			"demoUrl": "https://patrick-sang.github.io/flood.html"
+		},
+		{
+			"type": "n8n automations templates"
 		}
 	],
 	"collection": [
