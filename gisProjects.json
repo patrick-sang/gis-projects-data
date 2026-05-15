@@ -92,7 +92,8 @@
 			"demoUrl": "https://patrick-sang.github.io/flood.html"
 		},
 		{
-			"type": "n8n automations templates"
+			"type": "n8n automations templates",
+			"title": " GIS n8n Smart-City Automation"
 		}
 	],
 	"collection": [
