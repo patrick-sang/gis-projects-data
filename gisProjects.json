@@ -87,14 +87,15 @@
 		{
 			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@3212b93a7195c3d602043eb5e78de0ff8922d0e7/images/1000038670.jpg",
 			"type": "Real Time System s",
-			"title": "Real Time Flood Warning System(Nairobi County)-Beta version(in the process of Intergrationing with Google Earth Engine APIs",
+			"title": "Real Time Flood Warning System(Nairobi County)-Beta version(in the process of Intergrationing with Google Earth Engine API",
 			"description": "Beta version",
 			"demoUrl": "https://patrick-sang.github.io/flood.html"
 		},
 		{
-			"type": "n8n automations templates",
-			"title": " GIS n8n Smart-City Automation"
-		}
+			"type": "N8N automations",
+			"title": "Nairobi Flood Intelligence → n8n Flood Automation Platform"
+		},
+		{}
 	],
 	"collection": [
 		{
