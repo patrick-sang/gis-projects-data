@@ -99,7 +99,8 @@
 		},
 		{
 			"type": "n8n automations",
-			"title": "Real-Time Transit Intelligence & Mobility Optimization-Nairobi county(Beta version-Still intergrating with APIs)"
+			"title": "Real-Time Transit Intelligence & Mobility Optimization-Nairobi county(Beta version-Still intergrating with APIs)",
+			"description": "Nairobi is an intelligent public transit analytics platform built to optimize Nairobi’s matatu and bus transportation ecosystem using realtime GTFS feeds, GIS routing intelligence, AI congestion analytics, and mobility automation.\n\nThe platform automates realtime vehicle tracking, transit delay prediction, commuter demand analysis, and route optimization using n8n workflows connected to Transitland APIs and GIS routing engines. Interactive dashboards provide live operational insights into Nairobi’s transit system.\n\nThe project demonstrates advanced transit GIS engineering, realtime mobility analytics, geospatial automation, and urban transportation intelligence.\n"
 		}
 	],
 	"collection": [
