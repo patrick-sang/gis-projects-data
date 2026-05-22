@@ -104,6 +104,9 @@
 			"description": "Nairobi is an intelligent public transit analytics platform built to optimize Nairobi’s matatu and bus transportation ecosystem using realtime GTFS feeds, GIS routing intelligence, AI congestion analytics, and mobility automation.\n\nThe platform automates realtime vehicle tracking, transit delay prediction, commuter demand analysis, and route optimization using n8n workflows connected to Transitland APIs and GIS routing engines. Interactive dashboards provide live operational insights into Nairobi’s transit system.\n\nThe project demonstrates advanced transit GIS engineering, realtime mobility analytics, geospatial automation, and urban transportation intelligence.\nKey Features:\nGTFS real time integration\nVehicle tracking\nCongestion prediction\nTransit heatmaps\nDelay forecasting\nRoute optimization\nCommuter analytics\nDynamic rerouting\nTransit dashboards\n\nBenefits of the Transit Intelligence & Mobility Platform:\n\n-Reduces commuter delays through realtime transit analytics\n-Helps matatu operators optimize routes and fuel usage\n-Improves passenger travel experience\n-Enables smarter transport planning for Nairobi County\n-Identifies underserved transit corridors\n-Improves congestion management\n-Supports realtime commuter information systems\n-Reduces transport inefficiencies using AI predictions\n-Enhances public transport reliability\n-Supports future BRT and multimodal transport integration\n",
 			"demoUrl": "https://patrick-sang.github.io/traffic.html",
 			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@8171cdccc42bdb2584a6b92bd76f128fb04ccdba/images/1000038972.jpg"
+		},
+		{
+			"type": "Application programming interface(API)"
 		}
 	],
 	"collection": [
