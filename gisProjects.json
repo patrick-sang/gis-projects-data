@@ -106,7 +106,8 @@
 			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@8171cdccc42bdb2584a6b92bd76f128fb04ccdba/images/1000038972.jpg"
 		},
 		{
-			"type": "Application programming interface(API)"
+			"type": "Application programming interface(API)",
+			"title": "Flood Route Api"
 		}
 	],
 	"collection": [
