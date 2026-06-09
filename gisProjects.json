@@ -55,55 +55,212 @@
 		{
 			"thumbnail": [
 				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@58d1bd47229db6ba520fccd41c7cee0a2c97099e/images/1000038650.png",
+				null,
+				null,
 				null
 			],
 			"type": [
 				"Dashboards",
+				null,
+				null,
 				null
 			],
 			"title": [
 				"Kenya Disability Dashboard",
+				null,
+				null,
 				null
 			],
 			"date": [
 				"2024",
+				null,
+				null,
 				null
 			],
 			"description": [
 				"PROJECT OVERVIEW: This is an interactive data visualization dashboard that analyzes disability statistics from the 2019 Kenya Population and Housing Census. It transforms raw census data into an accessible, map-based tool that helps users understand disability prevalence across Kenya's 47 counties. The Problem This Solves: Before this dashboard, disability data was buried in lengthy PDF reports and complex spreadsheets. Policymakers, researchers, and advocates couldn't easily: See which counties have the highest disability rates Compare different types of disabilities (mobility vs. vision vs. hearing) Identify regional patterns or clusters Export insights for reports or presentations. FEATURES: 1. Interactive County Map Color-coded map of Kenya showing disability rates by county-Click any county to see its specific data Dynamic updating as you filter or select different disability types 2. Six Disability Domains Analyzed Domain- What It Measures Mobility- Difficulty walking or climbing stairs Seeing- Difficulty with vision even with glasses Hearing- Difficulty with hearing even with hearing aid Cognition- Difficulty remembering or concentrating Self-Care- Difficulty with daily self-care activities Communication- Difficulty being understood or understanding others 3. Analytical Tools Spatial Filtering: Select multiple counties to focus analysis on specific regions Domain Comparison: Compare two disability types against each other Clustering Analysis: Groups counties with similar disability patterns Correlation Matrix: Shows relationships between different disability types 4. Export Capabilities Export maps as PNG images Download data as CSV files Generate PDF analysis reports Who Would Use This: User Use Case Government policymakers Resource allocation and planning NGOs and disability advocates Identifying underserved regions Researchers and academics Statistical analysis and trend identification Healthcare planners Service delivery targeting Journalists Data-driven reporting Technical Implementation: The dashboard is built as a single HTML file using: Leaflet.js for interactive mapping D3.js for data visualizations and charts Chart.js for additional charting capabilities jsPDF & html2canvas for PDF/PNG export functionality Data is embedded as GeoJSON with county boundaries and census statistics for all 47 Kenyan counties. VALUE PROPOSITIO This dashboard transforms static census numbers into an actionable tool for understanding disability in Kenya. It makes complex data accessible, comparable, and exportable — saving hours of manual data processing and enabling evidence-based decision making.",
+				null,
+				null,
 				null
 			],
-			"demoUrl": "https://patrick-sang.github.io/disability_dashboard.html"
+			"demoUrl": [
+				"https://patrick-sang.github.io/disability_dashboard.html",
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null
+			]
 		},
 		{
-			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@bbcc41b05f4ec1ab6e6a672e7dce97eae3a82976/images/1000038652.png",
-			"type": "Dashboards",
-			"title": "Kenya Multi-Year Diaspora Remitance Flow",
-			"date": "2023",
-			"githubUrl": "https://github.com/patrick-sang",
-			"demoUrl": "https://patrick-sang.github.io/Diaspora-Remitance.html",
-			"description": "PROJECT OVERVIEW: The Project maps remittance flows from six world regions — North America, Europe, Middle East, Africa, Asia-Pacific, and Rest of World — into Kenya using animated curved lines on a Leaflet map. The line thickness, color, and animation speed represent the remittance amount, while tooltips and popups show exact values and distances. KEY FEATURES: Yearly data views -Switch between 2022–2025 to see remittance changes over time Region filtering-Focus on a single region’s flows Dynamic map styling- Line width scales with remittance value; colors by region Animated flows- Dashed lines with pulsing/moving effects to indicate direction and scale Statistics panel- Shows total remittance per region and average distance traveled Trend analysis- Line chart and YoY growth table with market share Data export -Export as GeoJSON, CSV, or plain-text analysis report Responsive design-Works on desktop and mobile screen. VALUE IT BRINGS: 1. For Policy Makers & Economists Quickly identify which diaspora regions contribute most to Kenya’s foreign exchange. Track year-over-year growth trends to guide foreign policy, trade agreements, or diaspora engagement programs. Understand geographic concentration of remittances for targeted financial inclusion initiatives. 2. For Financial Institutions & Remittance Companies Spot high-value corridors (e.g., North America, Europe) for marketing and fee reduction strategies. Analyze market share by region to prioritize expansion or partnerships. Use exported data for internal forecasting and reporting. 3. For Researchers Study spatial patterns of global migration and its economic impact. Access a clean, reusable dataset (GeoJSON/CSV) for further analysis in GIS tools like QGIS or ArcGIS. Understand how distance correlates with remittance volume (though not causal, it’s visualized). 4. For Data Storytellers & Journalists Embed the interactive map in articles or reports about Kenya’s economy. Use the trend charts to visually communicate growth stories (e.g., “Middle East remittances grew 8% in 2024”). 5. Technical Value Demonstrates integration of Leaflet + Turf.js for geodesic line calculation and spatial analysis. Shows real-time filtering, animation toggling, and data persistence without a backend. Serves as a template for any origin-destination flow mapping project (trade, migration, internet traffic, etc.). TECHNOLOGY: Frontend: HTML5, CSS3, JavaScript (vanilla) Mapping: Leaflet.js + CartoDB basemap Geospatial math: Turf.js (distance, midpoint, bounding box, geodesic interpolation) Charts: Chart.js Data storage: localStorage (can be extended to Mavo or a real API) Animations: CSS keyframes (flow-pulse, flow-move) Bottom Line This project transforms static remittance numbers into an interactive, geographic story — helping anyone from government analysts to journalists see where money flows from, how much, and whether it’s growing — all in a self-contained, no-backend web app."
+			"thumbnail": [
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@bbcc41b05f4ec1ab6e6a672e7dce97eae3a82976/images/1000038652.png",
+				null,
+				null,
+				null
+			],
+			"type": [
+				"Dashboards",
+				null,
+				null,
+				null
+			],
+			"title": [
+				"Kenya Multi-Year Diaspora Remitance Flow",
+				null,
+				null,
+				null
+			],
+			"date": [
+				"2023",
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				"https://github.com/patrick-sang",
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				"https://patrick-sang.github.io/Diaspora-Remitance.html",
+				null
+			],
+			"description": [
+				"PROJECT OVERVIEW: The Project maps remittance flows from six world regions — North America, Europe, Middle East, Africa, Asia-Pacific, and Rest of World — into Kenya using animated curved lines on a Leaflet map. The line thickness, color, and animation speed represent the remittance amount, while tooltips and popups show exact values and distances. KEY FEATURES: Yearly data views -Switch between 2022–2025 to see remittance changes over time Region filtering-Focus on a single region’s flows Dynamic map styling- Line width scales with remittance value; colors by region Animated flows- Dashed lines with pulsing/moving effects to indicate direction and scale Statistics panel- Shows total remittance per region and average distance traveled Trend analysis- Line chart and YoY growth table with market share Data export -Export as GeoJSON, CSV, or plain-text analysis report Responsive design-Works on desktop and mobile screen. VALUE IT BRINGS: 1. For Policy Makers & Economists Quickly identify which diaspora regions contribute most to Kenya’s foreign exchange. Track year-over-year growth trends to guide foreign policy, trade agreements, or diaspora engagement programs. Understand geographic concentration of remittances for targeted financial inclusion initiatives. 2. For Financial Institutions & Remittance Companies Spot high-value corridors (e.g., North America, Europe) for marketing and fee reduction strategies. Analyze market share by region to prioritize expansion or partnerships. Use exported data for internal forecasting and reporting. 3. For Researchers Study spatial patterns of global migration and its economic impact. Access a clean, reusable dataset (GeoJSON/CSV) for further analysis in GIS tools like QGIS or ArcGIS. Understand how distance correlates with remittance volume (though not causal, it’s visualized). 4. For Data Storytellers & Journalists Embed the interactive map in articles or reports about Kenya’s economy. Use the trend charts to visually communicate growth stories (e.g., “Middle East remittances grew 8% in 2024”). 5. Technical Value Demonstrates integration of Leaflet + Turf.js for geodesic line calculation and spatial analysis. Shows real-time filtering, animation toggling, and data persistence without a backend. Serves as a template for any origin-destination flow mapping project (trade, migration, internet traffic, etc.). TECHNOLOGY: Frontend: HTML5, CSS3, JavaScript (vanilla) Mapping: Leaflet.js + CartoDB basemap Geospatial math: Turf.js (distance, midpoint, bounding box, geodesic interpolation) Charts: Chart.js Data storage: localStorage (can be extended to Mavo or a real API) Animations: CSS keyframes (flow-pulse, flow-move) Bottom Line This project transforms static remittance numbers into an interactive, geographic story — helping anyone from government analysts to journalists see where money flows from, how much, and whether it’s growing — all in a self-contained, no-backend web app.",
+				null,
+				null,
+				null
+			]
 		},
 		{
-			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@3212b93a7195c3d602043eb5e78de0ff8922d0e7/images/1000038670.jpg",
-			"type": "Real Time System s",
-			"title": "Real Time Flood Warning System(Nairobi County)-Beta version(in the process of Intergrationing with Google Earth Engine API",
-			"description": "Beta version",
-			"demoUrl": "https://patrick-sang.github.io/flood.html"
+			"thumbnail": [
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@3212b93a7195c3d602043eb5e78de0ff8922d0e7/images/1000038670.jpg",
+				null,
+				null,
+				null
+			],
+			"type": [
+				"Real Time System s",
+				null,
+				null,
+				null
+			],
+			"title": [
+				"Real Time Flood Warning System(Nairobi County)-Beta version(in the process of Intergrationing with Google Earth Engine API",
+				null,
+				null,
+				null
+			],
+			"description": [
+				"Beta version",
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				"https://patrick-sang.github.io/flood.html",
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null
+			]
 		},
 		{
-			"type": "N8N automations",
-			"title": "Nairobi Flood Intelligence → n8n Flood Automation Platform",
-			"description": "This is a geospatial flood intelligence platform developed to predict, monitor, and respond to urban flooding across Nairobi County. The system integrates rainfall forecasts, Sentinel-1 radar imagery, digital elevation models, hydrological analysis, and road network intelligence to identify flood-prone locations and generate realtime flood alerts.\n\nThe platform automates geospatial workflows using n8n to continuously process environmental datasets, detect water accumulation zones, estimate flood severity, and optimize emergency routing. AI-assisted spatial models are used to predict flood risks and estimate the impact on roads, settlements, and public infrastructure.\n\nThis project demonstrates advanced hydrological GIS analysis, raster processing automation, disaster intelligence systems, and realtime environmental monitoring.\n\nKey Features:\nRealtime flood prediction\nHydrological terrain analysis\nRoad flooding intelligence\nEmergency rerouting\nFlood risk heatmaps\nAI flood forecasting\nDrainage monitoring\nSMS and Telegram alerts\nSentinel-1 flood detection\nEnvironmental dashboards\nTechnology:\nn8n\nLeaflet.js\nSentinel Hub\nCHIRPS Rainfall API\nPostGIS\nTurf.js\nGeoTIFF processing\nDeno\nOpenStreetMap\n",
-			"demoUrl": "https://patrick-sang.github.io/flood.html",
-			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@1926a452ac5a577ceb0f58f39f90772d4046cef4/images/1000038669.jpg"
+			"type": [
+				"N8N automations",
+				null,
+				null,
+				null
+			],
+			"title": [
+				"Nairobi Flood Intelligence → n8n Flood Automation Platform",
+				null,
+				null,
+				null
+			],
+			"description": [
+				"This is a geospatial flood intelligence platform developed to predict, monitor, and respond to urban flooding across Nairobi County. The system integrates rainfall forecasts, Sentinel-1 radar imagery, digital elevation models, hydrological analysis, and road network intelligence to identify flood-prone locations and generate realtime flood alerts.\n\nThe platform automates geospatial workflows using n8n to continuously process environmental datasets, detect water accumulation zones, estimate flood severity, and optimize emergency routing. AI-assisted spatial models are used to predict flood risks and estimate the impact on roads, settlements, and public infrastructure.\n\nThis project demonstrates advanced hydrological GIS analysis, raster processing automation, disaster intelligence systems, and realtime environmental monitoring.\n\nKey Features:\nRealtime flood prediction\nHydrological terrain analysis\nRoad flooding intelligence\nEmergency rerouting\nFlood risk heatmaps\nAI flood forecasting\nDrainage monitoring\nSMS and Telegram alerts\nSentinel-1 flood detection\nEnvironmental dashboards\nTechnology:\nn8n\nLeaflet.js\nSentinel Hub\nCHIRPS Rainfall API\nPostGIS\nTurf.js\nGeoTIFF processing\nDeno\nOpenStreetMap\n",
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				"https://patrick-sang.github.io/flood.html",
+				null
+			],
+			"thumbnail": [
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@1926a452ac5a577ceb0f58f39f90772d4046cef4/images/1000038669.jpg",
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null
+			]
 		},
 		{
-			"type": "n8n automations",
-			"title": "Real-Time Transit Intelligence & Mobility Optimization-Nairobi county(Beta version-Still intergrating with AP",
-			"description": "Nairobi is an intelligent public transit analytics platform built to optimize Nairobi’s matatu and bus transportation ecosystem using realtime GTFS feeds, GIS routing intelligence, AI congestion analytics, and mobility automation.\n\nThe platform automates realtime vehicle tracking, transit delay prediction, commuter demand analysis, and route optimization using n8n workflows connected to Transitland APIs and GIS routing engines. Interactive dashboards provide live operational insights into Nairobi’s transit system.\n\nThe project demonstrates advanced transit GIS engineering, realtime mobility analytics, geospatial automation, and urban transportation intelligence.\nKey Features:\nGTFS real time integration\nVehicle tracking\nCongestion prediction\nTransit heatmaps\nDelay forecasting\nRoute optimization\nCommuter analytics\nDynamic rerouting\nTransit dashboards\n\nBenefits of the Transit Intelligence & Mobility Platform:\n\n-Reduces commuter delays through realtime transit analytics\n-Helps matatu operators optimize routes and fuel usage\n-Improves passenger travel experience\n-Enables smarter transport planning for Nairobi County\n-Identifies underserved transit corridors\n-Improves congestion management\n-Supports realtime commuter information systems\n-Reduces transport inefficiencies using AI predictions\n-Enhances public transport reliability\n-Supports future BRT and multimodal transport integration\n",
-			"demoUrl": "https://patrick-sang.github.io/traffic.html",
-			"thumbnail": "https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@8171cdccc42bdb2584a6b92bd76f128fb04ccdba/images/1000038972.jpg"
+			"type": [
+				"n8n automations",
+				null,
+				null,
+				null
+			],
+			"title": [
+				"Real-Time Transit Intelligence & Mobility Optimization-Nairobi county(Beta version-Still intergrating with AP",
+				null,
+				null,
+				null
+			],
+			"description": [
+				"Nairobi is an intelligent public transit analytics platform built to optimize Nairobi’s matatu and bus transportation ecosystem using realtime GTFS feeds, GIS routing intelligence, AI congestion analytics, and mobility automation.\n\nThe platform automates realtime vehicle tracking, transit delay prediction, commuter demand analysis, and route optimization using n8n workflows connected to Transitland APIs and GIS routing engines. Interactive dashboards provide live operational insights into Nairobi’s transit system.\n\nThe project demonstrates advanced transit GIS engineering, realtime mobility analytics, geospatial automation, and urban transportation intelligence.\nKey Features:\nGTFS real time integration\nVehicle tracking\nCongestion prediction\nTransit heatmaps\nDelay forecasting\nRoute optimization\nCommuter analytics\nDynamic rerouting\nTransit dashboards\n\nBenefits of the Transit Intelligence & Mobility Platform:\n\n-Reduces commuter delays through realtime transit analytics\n-Helps matatu operators optimize routes and fuel usage\n-Improves passenger travel experience\n-Enables smarter transport planning for Nairobi County\n-Identifies underserved transit corridors\n-Improves congestion management\n-Supports realtime commuter information systems\n-Reduces transport inefficiencies using AI predictions\n-Enhances public transport reliability\n-Supports future BRT and multimodal transport integration\n",
+				null,
+				null,
+				null
+			],
+			"demoUrl": [
+				"https://patrick-sang.github.io/traffic.html",
+				null
+			],
+			"thumbnail": [
+				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@8171cdccc42bdb2584a6b92bd76f128fb04ccdba/images/1000038972.jpg",
+				null,
+				null,
+				null
+			],
+			"date": [
+				null,
+				null,
+				null,
+				null
+			],
+			"githubUrl": [
+				null,
+				null,
+				null,
+				null
+			]
 		}
 	],
 	"collection": [
