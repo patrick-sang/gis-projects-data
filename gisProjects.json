@@ -164,18 +164,6 @@
 			"demoUrl": [
 				"https://patrick-sang.github.io/",
 				null
-			],
-			"date": [
-				null,
-				null,
-				null,
-				null
-			],
-			"githubUrl": [
-				null,
-				null,
-				null,
-				null
 			]
 		},
 		{
@@ -206,18 +194,6 @@
 				null,
 				null,
 				null
-			],
-			"date": [
-				null,
-				null,
-				null,
-				null
-			],
-			"githubUrl": [
-				null,
-				null,
-				null,
-				null
 			]
 		},
 		{
@@ -245,18 +221,6 @@
 			],
 			"thumbnail": [
 				"https://cdn.jsdelivr.net/gh/patrick-sang/gis-projects-data@8171cdccc42bdb2584a6b92bd76f128fb04ccdba/images/1000038972.jpg",
-				null,
-				null,
-				null
-			],
-			"date": [
-				null,
-				null,
-				null,
-				null
-			],
-			"githubUrl": [
-				null,
 				null,
 				null,
 				null
